@@ -1,0 +1,9 @@
+<h1>This is the index.html.erb</h1>
+
+<% @restaurants.each do |restaurant| %>
+  <p>
+  <%= restaurant.name %>
+  </p>
+  <% end %>
+<br>
+<%= link_to "Add new restaurant", new_restaurant_path %>
